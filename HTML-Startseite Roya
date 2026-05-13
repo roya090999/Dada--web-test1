@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roya Dada – 5R</title>
+</head>
+
+<body style="background-color: yellow;">
+
+    <h1>Roya Dada – 5R</h1>
+
+    <h2>Persönliche Daten</h2>
+
+    <p>
+        Geburtsdatum: 21.01.2011<br>
+        Lieblingsfarbe: Gelb
+    </p>
+
+    <h2>Meine Lieblingsfächer</h2>
+
+    <ol>
+        <li>Englisch</li>
+        <li>Biologie</li>
+        <li>Sport</li>
+    </ol>
+
+    <h2>Meine Hobbys</h2>
+
+    <ul id="liste-hobbys"></ul>
+
+    <h2>Freies Bild</h2>
+
+<figure>
+    <img 
+        src="img/bild1.jpg"
+        width="400"
+        title="Freies Bild"
+        alt="Mädchen beim Eislaufen"
+    >
+
+    <figcaption>
+        Bildquelle:
+        <a href="https://pxhere.com/de/photo/1354803" target="_blank">
+            Foto auf PxHere
+        </a>
+        —
+        Lizenz:
+        <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">
+            CC0 Public Domain
+        </a>
+    </figcaption>
+
+    </figure>
+
+    <script>
+        const hobbys = ["Singen", "Reiten", "Eislaufen", "Roya Dada"];
+
+        const liste = document.getElementById("liste-hobbys");
+
+        hobbys.forEach(h => {
+            let li = document.createElement("li");
+            li.textContent = h;
+            liste.appendChild(li);
+        });
+    </script>
+
+</body>
+</html>
